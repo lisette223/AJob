@@ -334,7 +334,8 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWE-AE-z3r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="228"/>
+          
+
         </scene>
         <!--View Controller-->
         <scene sceneID="nzE-or-09A">
@@ -502,6 +503,9 @@
         <image name="Screen Shot 2022-03-01 at 9.27.24 AM" width="906" height="126"/>
         <image name="Screen Shot 2022-03-01 at 9.27.56 AM" width="855" height="201"/>
         <image name="Screen Shot 2022-03-02 at 9.51.49 AM" width="897" height="111"/>
+        <image name="Screen Shot 2022-03-03 at 9.19.03 AM" width="270" height="306"/>
+        <image name="Screen Shot 2022-03-03 at 9.19.21 AM" width="150" height="245"/>
+        <image name="Screen Shot 2022-03-03 at 9.21.59 AM" width="312" height="163"/>
         <image name="Student working" width="800" height="800"/>
         <image name="google-logo-png-suite-everything-you-need-know-about-google-newest-0" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
