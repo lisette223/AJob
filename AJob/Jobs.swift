@@ -18,7 +18,7 @@ struct Jobs{
     var name: String
     var description:String
     var requirements:String
-    var contact:String
+    var link:String
     var image:UIImage
 
 }

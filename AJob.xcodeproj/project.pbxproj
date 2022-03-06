@@ -16,6 +16,7 @@
 		5BED29B627D4202B00DF4EB0 /* Jobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29B527D4202B00DF4EB0 /* Jobs.swift */; };
 		5BED29B827D4213300DF4EB0 /* JobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */; };
 		5BED29BA27D42C8600DF4EB0 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */; };
+		5BED29BC27D5331D00DF4EB0 /* JobTableDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5BED29B527D4202B00DF4EB0 /* Jobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jobs.swift; sourceTree = "<group>"; };
 		5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
 		5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				5B19678A27B57FB1001A3CAE /* SceneDelegate.swift */,
 				5B19678C27B57FB1001A3CAE /* ViewController.swift */,
 				5B19678E27B57FB1001A3CAE /* Main.storyboard */,
+				5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */,
 				5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */,
 				5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */,
 				5B19679127B57FB3001A3CAE /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				5BED29B827D4213300DF4EB0 /* JobTableViewController.swift in Sources */,
 				5BED29BA27D42C8600DF4EB0 /* JobTableViewCell.swift in Sources */,
 				5B19678B27B57FB1001A3CAE /* SceneDelegate.swift in Sources */,
+				5BED29BC27D5331D00DF4EB0 /* JobTableDetailsVC.swift in Sources */,
 				5BED29B627D4202B00DF4EB0 /* Jobs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
