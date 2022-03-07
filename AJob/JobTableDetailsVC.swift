@@ -7,9 +7,11 @@
 
 import UIKit
 
-class JobTableDetailsVC: UIViewController {
+class JobTableDetailsVC: UIViewController, UITextViewDelegate {
 
-    @IBOutlet weak var jAppLink: UILabel!
+  
+    @IBOutlet weak var jLinkTextView: UITextView!
+    
     @IBOutlet weak var jDescription: UITextView!
     @IBOutlet weak var jImage: UIImageView!
     @IBOutlet weak var jTitle: UILabel!
@@ -25,10 +27,18 @@ class JobTableDetailsVC: UIViewController {
         
         jImage.image = ((allJobs.jobs[indexpath].image))
         
-        jAppLink.text = "\((allJobs.jobs[indexpath].link))"
+   
+        
+        let attributedString = NSMutableAttributedString(string: "Click here to apply")
+        attributedString.addAttribute(.link, value: "\((allJobs.jobs[indexpath].link))", range: NSRange(location: 0, length: "Click here to apply".count))
+        jLinkTextView.textAlignment = .center
+        jLinkTextView.attributedText = attributedString
     }
     
-
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+            UIApplication.shared.open(URL)
+            return false
+        }
     /*
     // MARK: - Navigation
 

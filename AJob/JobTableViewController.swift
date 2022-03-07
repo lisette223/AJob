@@ -16,7 +16,7 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var jTable: UITableView!
     var fastFood = [
-        ListOfJobs(type: "Fast Food", jobs: [Jobs(name: "Burger King", description: "Test", requirements: "sjdsd", link: "dksads", image: #imageLiteral(resourceName: "Screen Shot 2022-03-04 at 9.24.39 AM")),Jobs(name: "McDonalds", description: "Test", requirements: "sjdsd", link: "dksads", image: #imageLiteral(resourceName: "Screen Shot 2022-03-04 at 9.24.00 AM"))])]
+        ListOfJobs(type: "Fast Food", jobs: [Jobs(name: "Burger King", description: "Test", requirements: "sjdsd", link: "https:www.apple.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-04 at 9.24.39 AM")),Jobs(name: "McDonalds", description: "Test", requirements: "sjdsd", link: "https:www.google.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-04 at 9.24.00 AM"))])]
     var retail = [
         ListOfJobs(type: "Retail", jobs: [Jobs(name: "Target", description: "Test", requirements: "sjdsd", link: "dksads", image: #imageLiteral(resourceName: "Screen Shot 2022-03-01 at 9.20.42 AM")),Jobs(name: "Walgreens", description: "Test", requirements: "sjdsd", link: "dksads", image: #imageLiteral(resourceName: "Screen Shot 2022-03-01 at 9.27.56 AM"))])]
                                         
