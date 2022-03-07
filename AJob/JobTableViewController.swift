@@ -30,6 +30,8 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
         
    
         searchBar.delegate = self
+        
+     
         filteredJobs = jobs
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -78,11 +80,32 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
  
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let announce = jobs[section]
+        let announce = filteredJobs[section]
         
         return announce.type
     }
 
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+           let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 40))
+          
+             
+           let lbl = UILabel(frame: CGRect(x: 15, y: 0, width: view.frame.width - 15, height: 40))
+        lbl.font =  UIFont(name: "AppleSDGothicNeo-Thin", size: 30.0)
+        lbl.textColor = UIColor.black
+        //lbl.font = UIFont.boldSystemFont(ofSize: 20)
+        lbl.text = filteredJobs[section].type
+           view.addSubview(lbl)
+           return view
+         }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+           return 40
+    }
+         
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 80
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -125,7 +148,7 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let destination = segue.destination as? JobTableDetailsVC {
-            destination.allJobs = jobs[(jTable.indexPathForSelectedRow?.section)!]
+            destination.allJobs = filteredJobs[(jTable.indexPathForSelectedRow?.section)!]
             destination.indexpath = jTable.indexPathForSelectedRow?.row ?? 0
             jTable.deselectRow(at: jTable.indexPathForSelectedRow!, animated: true)
     }
@@ -139,11 +162,21 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
             filteredJobs = jobs
         }
         else{
-            for (i, j) in jobs.enumerated(){
-                if j.jobs[i].name.lowercased().contains(searchText.lowercased()){
-                    filteredJobs.append(j)
-                    
-                    print(i)
+            for (i, lj) in jobs.enumerated(){
+                //j.jobs[i].name.lowercased().contains(searchText.lowercased()){
+                //jobs[0].jobs[0].name
+                //jobs[0].jobs[1].name
+                //jobs[1].jobs[0].name
+                //jobs[1].jobs[1].name
+                //jobs[i].jobs[i].name
+                for(index,j) in lj.jobs.enumerated(){
+                    if j.name.lowercased().contains(searchText.lowercased()){
+                        var newLJ = lj
+                        var newJ:Jobs = lj.jobs[index]
+                        newLJ.jobs = [newJ]
+                        filteredJobs.append(newLJ)
+                       
+                    }
                 }
             }
         }
