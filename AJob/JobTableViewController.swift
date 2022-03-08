@@ -162,7 +162,7 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
             filteredJobs = jobs
         }
         else{
-            for (i, lj) in jobs.enumerated(){
+            for (_, lj) in jobs.enumerated(){
                 //j.jobs[i].name.lowercased().contains(searchText.lowercased()){
                 //jobs[0].jobs[0].name
                 //jobs[0].jobs[1].name
@@ -172,7 +172,7 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
                 for(index,j) in lj.jobs.enumerated(){
                     if j.name.lowercased().contains(searchText.lowercased()){
                         var newLJ = lj
-                        var newJ:Jobs = lj.jobs[index]
+                        let newJ:Jobs = lj.jobs[index]
                         newLJ.jobs = [newJ]
                         filteredJobs.append(newLJ)
                        
