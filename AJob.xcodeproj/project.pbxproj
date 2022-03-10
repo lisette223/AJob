@@ -17,6 +17,8 @@
 		5BED29B827D4213300DF4EB0 /* JobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */; };
 		5BED29BA27D42C8600DF4EB0 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */; };
 		5BED29BC27D5331D00DF4EB0 /* JobTableDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */; };
+		5BED29C027D7EEC400DF4EB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BED29BF27D7EEC400DF4EB0 /* GoogleService-Info.plist */; };
+		5BED29C327D7F02F00DF4EB0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5BED29C227D7F02F00DF4EB0 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,7 @@
 		5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
 		5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
 		5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableDetailsVC.swift; sourceTree = "<group>"; };
+		5BED29BF27D7EEC400DF4EB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BED29C327D7F02F00DF4EB0 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,7 @@
 				5B19678827B57FB1001A3CAE /* AppDelegate.swift */,
 				5B19678A27B57FB1001A3CAE /* SceneDelegate.swift */,
 				5B19678C27B57FB1001A3CAE /* ViewController.swift */,
+				5BED29BF27D7EEC400DF4EB0 /* GoogleService-Info.plist */,
 				5B19678E27B57FB1001A3CAE /* Main.storyboard */,
 				5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */,
 				5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */,
@@ -95,6 +100,9 @@
 			dependencies = (
 			);
 			name = AJob;
+			packageProductDependencies = (
+				5BED29C227D7F02F00DF4EB0 /* FirebaseAnalytics */,
+			);
 			productName = AJob;
 			productReference = 5B19678527B57FB1001A3CAE /* AJob.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 5B19677C27B57FB1001A3CAE;
+			packageReferences = (
+				5BED29C127D7F02F00DF4EB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5B19678627B57FB1001A3CAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B19679527B57FB3001A3CAE /* LaunchScreen.storyboard in Resources */,
+				5BED29C027D7EEC400DF4EB0 /* GoogleService-Info.plist in Resources */,
 				5B19679227B57FB3001A3CAE /* Assets.xcassets in Resources */,
 				5B19679027B57FB1001A3CAE /* Main.storyboard in Resources */,
 			);
@@ -376,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BED29C127D7F02F00DF4EB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BED29C227D7F02F00DF4EB0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BED29C127D7F02F00DF4EB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B19677D27B57FB1001A3CAE /* Project object */;
 }
