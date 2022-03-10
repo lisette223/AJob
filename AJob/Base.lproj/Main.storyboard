@@ -779,7 +779,6 @@
         <!--Job Opportunities-->
         <scene sceneID="zhS-QN-5TY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yup-vQ-AwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="b8R-iN-dUJ" customClass="JobTableViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Nox-Ad-qox">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -825,13 +824,13 @@
                         <segue destination="tbQ-LB-oNy" kind="show" identifier="showdetail" id="O91-em-Abf"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yup-vQ-AwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5277" y="3226"/>
         </scene>
         <!--Job Table DetailsVC-->
         <scene sceneID="cgj-5v-Up8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vLf-dy-ZMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="tbQ-LB-oNy" customClass="JobTableDetailsVC" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G5m-jV-Eb6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -896,13 +895,13 @@
                         <outlet property="jTitle" destination="MXZ-UT-U3i" id="Iei-Wp-wwN"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLf-dy-ZMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4529" y="3226"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eOY-7t-qYc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="121-Mv-cS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="zj7-Tt-kV6" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="l72-6X-x2h"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H9d-AH-c4U">
@@ -913,6 +912,7 @@
                         <segue destination="b8R-iN-dUJ" kind="relationship" relationship="rootViewController" id="SPv-Xg-GhW"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="121-Mv-cS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4530" y="2561"/>
         </scene>
@@ -1358,6 +1358,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="wIh-C0-UUV"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qMd-tj-NND">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -1374,7 +1375,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Flf-Wu-1mm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O7u-cG-TXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" toolbarHidden="NO" id="4wO-G8-nxC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fzo-6C-U7L">
@@ -1390,6 +1390,7 @@
                         <segue destination="MRN-u5-eFi" kind="relationship" relationship="rootViewController" id="1Aq-N1-ASU"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7u-cG-TXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3839" y="-244"/>
         </scene>
