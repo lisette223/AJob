@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -119,11 +120,11 @@
             <objects>
                 <viewController id="1OL-Ay-OSt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atc-tj-bpf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udX-45-gd2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1629"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbQ-1S-WGB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
@@ -362,6 +363,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="SUBMIT">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="95B-09-RT6" kind="show" id="mob-Mw-W9Y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NN8-oT-hNI">
                                         <rect key="frame" x="299" y="837" width="104" height="31"/>
@@ -483,6 +487,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AfI-fc-EKM"/>
+                    <size key="freeformSize" width="414" height="1800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ0-qj-M2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1174,13 +1179,6 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DISCOUNT STORES:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4E-2E-a87">
-                                <rect key="frame" x="21" y="630" width="184" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lgX-15-bOm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1362,82 +1360,155 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwb-jn-Kuw">
-                                <rect key="frame" x="0.0" y="592" width="119" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Help">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-Hk-fxV">
-                                <rect key="frame" x="0.0" y="692" width="212" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Interview questions">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNX-ik-2xc">
-                                <rect key="frame" x="220" y="692" width="194" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Continue app">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98H-2Z-nov">
-                                <rect key="frame" x="127" y="592" width="157" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Application Guide">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARf-sW-AoY">
-                                <rect key="frame" x="292" y="592" width="122" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Tips">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                </buttonConfiguration>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="NPU-1g-Ej4">
-                                <rect key="frame" x="57" y="227" width="300.5" height="200"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="CoL-9k-ZtJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDU-9U-ybF">
-                                        <rect key="frame" x="0.0" y="152" width="26" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Student working" translatesAutoresizingMaskIntoConstraints="NO" id="eHt-0e-FgA">
-                                        <rect key="frame" x="26" y="0.0" width="200" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="rby-He-xxb"/>
-                                            <constraint firstAttribute="height" constant="200" id="wQY-yV-bUg"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFz-KI-gdW">
-                                        <rect key="frame" x="226" y="152" width="74.5" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="NPU-1g-Ej4">
+                                        <rect key="frame" x="57" y="0.0" width="300.5" height="369"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDU-9U-ybF">
+                                                <rect key="frame" x="0.0" y="321" width="26" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Student working" translatesAutoresizingMaskIntoConstraints="NO" id="eHt-0e-FgA">
+                                                <rect key="frame" x="26" y="169" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="rby-He-xxb"/>
+                                                    <constraint firstAttribute="height" constant="200" id="wQY-yV-bUg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFz-KI-gdW">
+                                                <rect key="frame" x="226" y="321" width="74.5" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="djW-yh-fhK">
+                                        <rect key="frame" x="14" y="534" width="386" height="191"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-nv-P0V">
+                                                <rect key="frame" x="0.0" y="0.0" width="386" height="89"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="nnn" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98H-2Z-nov">
+                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="89"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="Application Guiide">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.40181297059999999" green="0.54537945990000003" blue="0.52941262720000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="26"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="J0I-v2-5Xr" kind="show" id="m5W-eP-sID"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="jojij" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARf-sW-AoY">
+                                                        <rect key="frame" x="197" y="0.0" width="189" height="89"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Application Tips">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.8038985729" green="0.56988745929999995" blue="0.21163156629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="qhy-23-k1c" kind="show" id="ar7-rq-hCb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pah-Px-462">
+                                                <rect key="frame" x="0.0" y="99" width="386" height="92"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-Hk-fxV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="92"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Interview questions">
+                                                            <imageReference key="image" image="plus" catalog="system" symbolScale="large" renderingMode="original"/>
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.2538278699" green="0.044310189780000002" blue="0.12941423060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="INq-pq-TNu" kind="show" id="sTm-R9-xoW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNX-ik-2xc">
+                                                        <rect key="frame" x="197" y="0.0" width="189" height="92"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Continue application">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.76864945890000003" green="0.2891743779" blue="0.14108625050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="Ip3-7U-eHZ" kind="show" id="gUe-oR-Sxq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="eHt-0e-FgA" firstAttribute="top" secondItem="NPU-1g-Ej4" secondAttribute="top" id="efK-cQ-3sh"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N1L-ja-GLR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CoL-9k-ZtJ" firstAttribute="leading" secondItem="r6y-34-P5i" secondAttribute="leading" id="cKf-Qe-9bc"/>
+                            <constraint firstAttribute="trailing" secondItem="CoL-9k-ZtJ" secondAttribute="trailing" id="cnO-4U-hhX"/>
+                            <constraint firstItem="CoL-9k-ZtJ" firstAttribute="top" secondItem="N1L-ja-GLR" secondAttribute="top" id="fMD-q5-MgO"/>
+                            <constraint firstItem="N1L-ja-GLR" firstAttribute="bottom" secondItem="CoL-9k-ZtJ" secondAttribute="bottom" id="pVh-3L-QNd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="50h-SP-Iig"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgL-Jf-vfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2772.4637681159425" y="1869.6428571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gAb-gG-8CF">
+            <objects>
+                <viewController id="INq-pq-TNu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="foK-2c-1AU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KHa-Yj-DZo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AmY-74-Vyh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFa-0c-5NG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2045" y="1870"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aSy-9u-fg2">
+            <objects>
+                <viewController id="J0I-v2-5Xr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ll-cM-ch8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tlP-Ys-bKU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MOU-xb-dYF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTo-r0-MFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1377" y="1870"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xaS-OO-vrx">
@@ -1639,7 +1710,42 @@
             </objects>
             <point key="canvasLocation" x="-3839" y="-244"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="InT-Zl-xQ1">
+            <objects>
+                <viewController id="qhy-23-k1c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aiZ-5v-LtH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ouW-VC-VCQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xqe-qk-ZDk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgL-7z-Hau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="1870"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KdL-GF-oqq">
+            <objects>
+                <viewController id="Ip3-7U-eHZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oTn-Uc-Tjc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gkI-Mb-cgT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cD4-jO-rnd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZL-Ap-hmK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="1870"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mob-Mw-W9Y"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Facebook-Logo-Square-768x768" width="768" height="768"/>
         <image name="Screen Shot 2022-03-01 at 9.07.19 AM" width="994" height="460"/>
@@ -1653,7 +1759,9 @@
         <image name="Screen Shot 2022-03-04 at 9.27.19 AM" width="694" height="261"/>
         <image name="Screen Shot 2022-03-10 at 9.03.24 AM" width="436" height="193"/>
         <image name="Student working" width="800" height="800"/>
+        <image name="book" catalog="system" width="128" height="99"/>
         <image name="google-logo-png-suite-everything-you-need-know-about-google-newest-0" width="1024" height="1024"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
