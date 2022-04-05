@@ -1364,23 +1364,23 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="NPU-1g-Ej4">
-                                        <rect key="frame" x="57" y="0.0" width="300.5" height="369"/>
+                                        <rect key="frame" x="57" y="0.0" width="300.5" height="388"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDU-9U-ybF">
-                                                <rect key="frame" x="0.0" y="321" width="26" height="48"/>
+                                                <rect key="frame" x="0.0" y="340" width="26" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Student working" translatesAutoresizingMaskIntoConstraints="NO" id="eHt-0e-FgA">
-                                                <rect key="frame" x="26" y="169" width="200" height="200"/>
+                                                <rect key="frame" x="26" y="188" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="rby-He-xxb"/>
                                                     <constraint firstAttribute="height" constant="200" id="wQY-yV-bUg"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFz-KI-gdW">
-                                                <rect key="frame" x="226" y="321" width="74.5" height="48"/>
+                                                <rect key="frame" x="226" y="340" width="74.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1388,15 +1388,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="djW-yh-fhK">
-                                        <rect key="frame" x="14" y="534" width="386" height="191"/>
+                                        <rect key="frame" x="5.5" y="553" width="403" height="172"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-nv-P0V">
-                                                <rect key="frame" x="0.0" y="0.0" width="386" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="403" height="87"/>
                                                 <subviews>
                                                     <button toolTip="nnn" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98H-2Z-nov">
-                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="89"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="87"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="Application Guiide">
+                                                        <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="Application Guide">
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" red="0.40181297059999999" green="0.54537945990000003" blue="0.52941262720000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </backgroundConfiguration>
@@ -1408,13 +1408,13 @@
                                                         </connections>
                                                     </button>
                                                     <button toolTip="jojij" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARf-sW-AoY">
-                                                        <rect key="frame" x="197" y="0.0" width="189" height="89"/>
+                                                        <rect key="frame" x="205.5" y="0.0" width="197.5" height="87"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Application Tips">
+                                                        <buttonConfiguration key="configuration" style="plain" image="questionmark" catalog="system" title="Application Tips">
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" red="0.8038985729" green="0.56988745929999995" blue="0.21163156629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </backgroundConfiguration>
-                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -1424,14 +1424,14 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pah-Px-462">
-                                                <rect key="frame" x="0.0" y="99" width="386" height="92"/>
+                                                <rect key="frame" x="0.0" y="97" width="403" height="75"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-Hk-fxV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="92"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="75"/>
                                                         <color key="backgroundColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Interview questions">
-                                                            <imageReference key="image" image="plus" catalog="system" symbolScale="large" renderingMode="original"/>
+                                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Interview questions">
+                                                            <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" red="0.2538278699" green="0.044310189780000002" blue="0.12941423060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </backgroundConfiguration>
@@ -1443,18 +1443,15 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNX-ik-2xc">
-                                                        <rect key="frame" x="197" y="0.0" width="189" height="92"/>
+                                                        <rect key="frame" x="205.5" y="0.0" width="197.5" height="75"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Continue application">
+                                                        <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="Continue application">
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" red="0.76864945890000003" green="0.2891743779" blue="0.14108625050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </backgroundConfiguration>
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="Ip3-7U-eHZ" kind="show" id="gUe-oR-Sxq"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -1485,6 +1482,38 @@
                     <view key="view" contentMode="scaleToFill" id="foK-2c-1AU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u6R-lJ-SBy">
+                                <rect key="frame" x="20" y="212" width="374" height="601"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">1) Tell me something about yourself.
+2) How did you hear about this position?
+3) Why did you decide to apply for this position?
+4) What are your biggest strengths?
+5) What is your biggest weakness?
+6) What do you know about this company/organization?
+7) Why should we hire you?
+8) What are your salary requirements?
+9) Do you have any questions for us?
+10) What are you looking for in a new position?
+11) Are you considering other positions in other companies?
+12) What is the professional achievement you’re most proud of?
+13) What kind of work environment do you like best?
+14) Where do you see yourself in five years? 
+
+These question are generally what any fastfood or type of casual job will ask you.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Interview questions" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2u-Sq-1AG">
+                                <rect key="frame" x="20" y="125" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KHa-Yj-DZo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -1492,7 +1521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFa-0c-5NG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2045" y="1870"/>
+            <point key="canvasLocation" x="-2046.376811594203" y="1869.6428571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aSy-9u-fg2">
@@ -1726,22 +1755,6 @@
             </objects>
             <point key="canvasLocation" x="-743" y="1870"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="KdL-GF-oqq">
-            <objects>
-                <viewController id="Ip3-7U-eHZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oTn-Uc-Tjc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="gkI-Mb-cgT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="cD4-jO-rnd"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nZL-Ap-hmK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-71" y="1870"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="mob-Mw-W9Y"/>
@@ -1759,9 +1772,11 @@
         <image name="Screen Shot 2022-03-04 at 9.27.19 AM" width="694" height="261"/>
         <image name="Screen Shot 2022-03-10 at 9.03.24 AM" width="436" height="193"/>
         <image name="Student working" width="800" height="800"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="google-logo-png-suite-everything-you-need-know-about-google-newest-0" width="1024" height="1024"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
