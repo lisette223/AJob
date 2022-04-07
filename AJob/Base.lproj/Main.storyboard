@@ -1388,13 +1388,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="djW-yh-fhK">
-                                        <rect key="frame" x="5.5" y="553" width="403" height="172"/>
+                                        <rect key="frame" x="14" y="553" width="386" height="172"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-nv-P0V">
-                                                <rect key="frame" x="0.0" y="0.0" width="403" height="87"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="386" height="87"/>
                                                 <subviews>
                                                     <button toolTip="nnn" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98H-2Z-nov">
-                                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="87"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="87"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="Application Guide">
                                                             <backgroundConfiguration key="background">
@@ -1408,9 +1408,9 @@
                                                         </connections>
                                                     </button>
                                                     <button toolTip="jojij" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARf-sW-AoY">
-                                                        <rect key="frame" x="205.5" y="0.0" width="197.5" height="87"/>
+                                                        <rect key="frame" x="197" y="0.0" width="189" height="87"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="questionmark" catalog="system" title="Application Tips">
+                                                        <buttonConfiguration key="configuration" style="plain" image="questionmark" catalog="system" title="Interview Tips">
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" red="0.8038985729" green="0.56988745929999995" blue="0.21163156629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </backgroundConfiguration>
@@ -1424,10 +1424,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pah-Px-462">
-                                                <rect key="frame" x="0.0" y="97" width="403" height="75"/>
+                                                <rect key="frame" x="0.0" y="97" width="386" height="75"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-Hk-fxV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="75"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="75"/>
                                                         <color key="backgroundColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Interview questions">
@@ -1443,7 +1443,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNX-ik-2xc">
-                                                        <rect key="frame" x="205.5" y="0.0" width="197.5" height="75"/>
+                                                        <rect key="frame" x="197" y="0.0" width="189" height="75"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="Continue application">
                                                             <backgroundConfiguration key="background">
@@ -1502,7 +1502,7 @@
 13) What kind of work environment do you like best?
 14) Where do you see yourself in five years? 
 
-These question are generally what any fastfood or type of casual job will ask you.</mutableString>
+Disclaimer: These question are generally what any fastfood or type of casual job will ask you.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1528,16 +1528,73 @@ These question are generally what any fastfood or type of casual job will ask yo
             <objects>
                 <viewController id="J0I-v2-5Xr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ll-cM-ch8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18x-9a-rb3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="929"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9L-W3-UXn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Interview tips &amp; tricks" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dbk-cq-hTd">
+                                                <rect key="frame" x="20" y="86" width="374" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YXj-0i-OBQ">
+                                                <rect key="frame" x="20" y="182" width="374" height="736"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <mutableString key="text">1) Alway be honest with your answers never lie to your employer.
+
+2) Keep your cool and try your best to not stutter or freak out at all. 
+
+3) Dont feel fear or show it. Try to be confidend or show confidence.
+
+4) Make sure to not doze off or not be focused on what the conversation is on about.
+
+5) Make sure to have a good breakfast or something that will help you stay up and ready for the interview.
+
+6) Be prepared for anything not just the question that are listed in our Interview Questions tab be prepared to answer life questions.</mutableString>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1100" id="NEk-VF-e4g"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="n9L-W3-UXn" firstAttribute="bottom" secondItem="6i0-xJ-CKl" secondAttribute="bottom" id="BUM-cb-dpf"/>
+                                    <constraint firstItem="n9L-W3-UXn" firstAttribute="width" secondItem="FiF-pg-oBH" secondAttribute="width" id="DhK-X5-VBC"/>
+                                    <constraint firstItem="n9L-W3-UXn" firstAttribute="leading" secondItem="6i0-xJ-CKl" secondAttribute="leading" id="VbY-P2-paQ"/>
+                                    <constraint firstItem="n9L-W3-UXn" firstAttribute="trailing" secondItem="6i0-xJ-CKl" secondAttribute="trailing" id="YZj-L1-HRG"/>
+                                    <constraint firstItem="n9L-W3-UXn" firstAttribute="top" secondItem="6i0-xJ-CKl" secondAttribute="top" id="qyA-ik-v9s"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="6i0-xJ-CKl"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FiF-pg-oBH"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tlP-Ys-bKU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tlP-Ys-bKU" firstAttribute="trailing" secondItem="18x-9a-rb3" secondAttribute="trailing" id="G0x-Lo-rBa"/>
+                            <constraint firstItem="18x-9a-rb3" firstAttribute="leading" secondItem="tlP-Ys-bKU" secondAttribute="leading" id="OX0-aR-AWu"/>
+                            <constraint firstItem="tlP-Ys-bKU" firstAttribute="bottom" secondItem="18x-9a-rb3" secondAttribute="bottom" id="nVl-TV-SHt"/>
+                            <constraint firstItem="18x-9a-rb3" firstAttribute="top" secondItem="tlP-Ys-bKU" secondAttribute="top" id="vCX-HQ-Fhl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MOU-xb-dYF"/>
+                    <size key="freeformSize" width="414" height="1100"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTo-r0-MFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1377" y="1870"/>
+            <point key="canvasLocation" x="-1378.2608695652175" y="1869.6428571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xaS-OO-vrx">
@@ -1746,6 +1803,16 @@ These question are generally what any fastfood or type of casual job will ask yo
                     <view key="view" contentMode="scaleToFill" id="aiZ-5v-LtH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.youtube.com/watch?v=JIhjsAcgcfA " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MFO-MZ-dqR">
+                                <rect key="frame" x="20" y="240" width="394" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ouW-VC-VCQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -1753,7 +1820,7 @@ These question are generally what any fastfood or type of casual job will ask yo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgL-7z-Hau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="1870"/>
+            <point key="canvasLocation" x="-743.47826086956525" y="1869.6428571428571"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
