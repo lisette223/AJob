@@ -20,8 +20,8 @@ class LoginViewController: UIViewController {
   // MARK: UIViewController Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    enterEmail.delegate = self
-    enterPassword.delegate = self
+     // enterEmail.delegate = self
+      //enterPassword.delegate = self
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -29,15 +29,18 @@ class LoginViewController: UIViewController {
     navigationController?.setNavigationBarHidden(true, animated: false)
     handle = Auth.auth().addStateDidChangeListener { _, user in
       if user == nil {
-        self.navigationController?.popToRootViewController(animated: true)
+     //   self.navigationController?.popToRootViewController(animated: true)
       } else {
         self.performSegue(withIdentifier: self.loginToList, sender: nil)
+
+
         self.enterEmail.text = nil
         self.enterPassword.text = nil
       }
     }
   }
-
+    
+    
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     navigationController?.setNavigationBarHidden(false, animated: false)
