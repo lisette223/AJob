@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="0Mr-b9-Erx">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cfH-9B-DX8" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cfH-9B-DX8" customClass="LoginViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Tw-te-W6i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="95B-09-RT6" kind="show" id="hhV-pf-JMQ"/>
+                                            <action selector="loginDidTouch:" destination="cfH-9B-DX8" eventType="touchUpInside" id="uMi-2i-Mtt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -110,21 +110,26 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FjR-jO-Vqb"/>
+                    <connections>
+                        <outlet property="enterEmail" destination="6n4-Rt-bXh" id="Nk8-g6-my5"/>
+                        <outlet property="enterPassword" destination="fk6-db-gt1" id="8Iv-oo-Uu1"/>
+                        <segue destination="95B-09-RT6" kind="show" identifier="LoginToList" id="cho-Fz-jL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAC-Y2-puj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4312" y="1100"/>
+            <point key="canvasLocation" x="-4328" y="-68"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="I3K-Rj-o14">
             <objects>
                 <viewController id="1OL-Ay-OSt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atc-tj-bpf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1738"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udX-45-gd2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1629"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1567"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbQ-1S-WGB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
@@ -363,9 +368,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title="SUBMIT">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="95B-09-RT6" kind="show" id="mob-Mw-W9Y"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NN8-oT-hNI">
                                         <rect key="frame" x="299" y="837" width="104" height="31"/>
@@ -487,11 +489,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AfI-fc-EKM"/>
-                    <size key="freeformSize" width="414" height="1800"/>
+                    <size key="freeformSize" width="414" height="1738"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ0-qj-M2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3777" y="2575"/>
+            <point key="canvasLocation" x="-2194" y="2470"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oAB-vn-Xxw">
@@ -587,7 +589,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWs-5J-4rY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3839" y="411"/>
+            <point key="canvasLocation" x="-3768" y="-774"/>
         </scene>
         <!--Item-->
         <scene sceneID="hdZ-o1-7cl">
@@ -689,7 +691,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lY-1D-DwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2203" y="3226"/>
+            <point key="canvasLocation" x="-2854" y="3866"/>
         </scene>
         <!--Item-->
         <scene sceneID="uyK-hq-aZ7">
@@ -779,7 +781,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ui6-hU-TcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1341" y="3226"/>
+            <point key="canvasLocation" x="-1786" y="3923"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ldE-r9-JnM">
@@ -989,7 +991,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yup-vQ-AwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5277" y="3226"/>
+            <point key="canvasLocation" x="-3546" y="3165"/>
         </scene>
         <!--Job Table DetailsVC-->
         <scene sceneID="cgj-5v-Up8">
@@ -1060,7 +1062,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLf-dy-ZMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4529" y="3226"/>
+            <point key="canvasLocation" x="-4510" y="3362"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eOY-7t-qYc">
@@ -1077,7 +1079,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="121-Mv-cS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4530" y="2561"/>
+            <point key="canvasLocation" x="-3545" y="2235"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZeU-Sv-UKa">
@@ -1188,12 +1190,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWE-AE-z3r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3052.1739130434785" y="3225.6696428571427"/>
+            <point key="canvasLocation" x="-887" y="3923"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nzE-or-09A">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="e6B-Lh-fLD" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="e6B-Lh-fLD" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pJg-Su-WIA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1346,16 +1348,21 @@
                             <constraint firstAttribute="trailing" secondItem="lPn-HG-aU6" secondAttribute="trailing" id="hNl-MZ-1dc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eLW-fM-H4v"/>
+                    <navigationItem key="navigationItem" id="eLW-fM-H4v">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="ZxG-0W-XKM"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="signOutTitle" destination="ZxG-0W-XKM" id="g44-kV-I9D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31B-l5-vN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3839" y="1824"/>
+            <point key="canvasLocation" x="-3113" y="646"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lXd-Yg-7I2">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="95B-09-RT6" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="95B-09-RT6" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r6y-34-P5i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1469,16 +1476,25 @@
                             <constraint firstItem="N1L-ja-GLR" firstAttribute="bottom" secondItem="CoL-9k-ZtJ" secondAttribute="bottom" id="pVh-3L-QNd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="50h-SP-Iig"/>
+                    <navigationItem key="navigationItem" id="50h-SP-Iig">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="PgG-QX-dW9">
+                            <connections>
+                                <action selector="signOut:" destination="95B-09-RT6" id="LQS-VI-ZZt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="signOutTitle" destination="PgG-QX-dW9" id="dlL-Rg-AXU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgL-Jf-vfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2772.4637681159425" y="1869.6428571428571"/>
+            <point key="canvasLocation" x="-5114" y="686"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gAb-gG-8CF">
             <objects>
-                <viewController id="INq-pq-TNu" sceneMemberID="viewController">
+                <viewController id="INq-pq-TNu" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="foK-2c-1AU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1487,7 +1503,7 @@
                                 <rect key="frame" x="20" y="212" width="374" height="601"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">1) Tell me something about yourself.
+                                <string key="text">1) Tell me something about yourself.
 2) How did you hear about this position?
 3) Why did you decide to apply for this position?
 4) What are your biggest strengths?
@@ -1502,7 +1518,7 @@
 13) What kind of work environment do you like best?
 14) Where do you see yourself in five years? 
 
-Disclaimer: These question are generally what any fastfood or type of casual job will ask you.</mutableString>
+Disclaimer: These question are generally what any fastfood or type of casual job will ask you.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1517,16 +1533,21 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                         <viewLayoutGuide key="safeArea" id="KHa-Yj-DZo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AmY-74-Vyh"/>
+                    <navigationItem key="navigationItem" id="AmY-74-Vyh">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="oBa-4W-HuJ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="signOutTitle" destination="oBa-4W-HuJ" id="xOV-ua-7yA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFa-0c-5NG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2046.376811594203" y="1869.6428571428571"/>
+            <point key="canvasLocation" x="-4183" y="1496"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aSy-9u-fg2">
             <objects>
-                <viewController id="J0I-v2-5Xr" sceneMemberID="viewController">
+                <viewController id="J0I-v2-5Xr" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ll-cM-ch8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1547,7 +1568,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                                                 <rect key="frame" x="20" y="182" width="374" height="736"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <mutableString key="text">1) Alway be honest with your answers never lie to your employer.
+                                                <string key="text">1) Alway be honest with your answers never lie to your employer.
 
 2) Keep your cool and try your best to not stutter or freak out at all. 
 
@@ -1557,7 +1578,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
 
 5) Make sure to have a good breakfast or something that will help you stay up and ready for the interview.
 
-6) Be prepared for anything not just the question that are listed in our Interview Questions tab be prepared to answer life questions.</mutableString>
+6) Be prepared for anything not just the question that are listed in our Interview Questions tab be prepared to answer life questions.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1589,12 +1610,14 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                             <constraint firstItem="18x-9a-rb3" firstAttribute="top" secondItem="tlP-Ys-bKU" secondAttribute="top" id="vCX-HQ-Fhl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MOU-xb-dYF"/>
+                    <navigationItem key="navigationItem" id="MOU-xb-dYF">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="acs-HN-xny"/>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="1100"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTo-r0-MFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1378.2608695652175" y="1869.6428571428571"/>
+            <point key="canvasLocation" x="-6442" y="1453"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xaS-OO-vrx">
@@ -1751,7 +1774,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3g-uo-KBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3436" y="1100"/>
+            <point key="canvasLocation" x="-3281" y="-68"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wxf-Zx-7Sd">
@@ -1772,7 +1795,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLC-cY-uFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3006" y="2575"/>
+            <point key="canvasLocation" x="-506" y="2235"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Flf-Wu-1mm">
@@ -1794,12 +1817,12 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7u-cG-TXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3839" y="-244"/>
+            <point key="canvasLocation" x="-3768" y="-1637"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="InT-Zl-xQ1">
             <objects>
-                <viewController id="qhy-23-k1c" sceneMemberID="viewController">
+                <viewController id="qhy-23-k1c" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aiZ-5v-LtH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1816,16 +1839,18 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                         <viewLayoutGuide key="safeArea" id="ouW-VC-VCQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xqe-qk-ZDk"/>
+                    <navigationItem key="navigationItem" id="xqe-qk-ZDk">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="kqt-Zi-ipP"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="signOutTitle" destination="kqt-Zi-ipP" id="kGn-We-8Bw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgL-7z-Hau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743.47826086956525" y="1869.6428571428571"/>
+            <point key="canvasLocation" x="-5087" y="1496"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="mob-Mw-W9Y"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Facebook-Logo-Square-768x768" width="768" height="768"/>
         <image name="Screen Shot 2022-03-01 at 9.07.19 AM" width="994" height="460"/>

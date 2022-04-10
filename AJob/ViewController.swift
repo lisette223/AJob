@@ -8,14 +8,16 @@
 import UIKit
 import Firebase
 class ViewController: UIViewController {
-
-    @IBOutlet weak var signOut: UIBarButtonItem!
+    var programVar:String?
+@IBOutlet weak var signOutTitle: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        navigationItem.title = Auth.auth().currentUser?.email
+        
+        signOutTitle.title = "Sign Out"
     }
-
-
     @IBAction func signOut(_ sender: Any) {
        
         // 1
