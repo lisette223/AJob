@@ -33,13 +33,47 @@ class LoginViewController: UIViewController {
       } else {
         self.performSegue(withIdentifier: self.loginToList, sender: nil)
 
-
+        
         self.enterEmail.text = nil
         self.enterPassword.text = nil
+          
       }
     }
   }
-    
+    @IBAction func signUpDidTouch(_ sender: AnyObject) {
+      guard
+        let email = enterEmail.text,
+        let password = enterPassword.text,
+        !email.isEmpty,
+        !password.isEmpty
+      else { return }
+
+      Auth.auth().createUser(withEmail: email, password: password) { _, error in
+        if error == nil {
+          Auth.auth().signIn(withEmail: email, password: password)
+            
+        } else {
+          print("Error in createUser: \(error?.localizedDescription ?? "")")
+        }
+      }
+    }
+    @IBAction func forgotPassword(_ sender: Any) {
+        
+        Auth.auth().sendPasswordReset(withEmail: enterEmail.text!) { error in
+                   DispatchQueue.main.async {
+                       if self.enterEmail.text?.isEmpty==true || error != nil {
+                           let resetFailedAlert = UIAlertController(title: "Reset Failed", message: "Error: \(String(describing: error?.localizedDescription))", preferredStyle: .alert)
+                           resetFailedAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                           self.present(resetFailedAlert, animated: true, completion: nil)
+                       }
+                       if error == nil && self.enterEmail.text?.isEmpty==false{
+                           let resetEmailAlertSent = UIAlertController(title: "Reset Email Sent", message: "Reset email has been sent to your login email, please follow the instructions in the mail to reset your password", preferredStyle: .alert)
+                           resetEmailAlertSent.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                           self.present(resetEmailAlertSent, animated: true, completion: nil)
+                       }
+                   }
+               }
+    }
     
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
@@ -74,22 +108,7 @@ class LoginViewController: UIViewController {
     }
   }
 
-  @IBAction func signUpDidTouch(_ sender: AnyObject) {
-    guard
-      let email = enterEmail.text,
-      let password = enterPassword.text,
-      !email.isEmpty,
-      !password.isEmpty
-    else { return }
-
-    Auth.auth().createUser(withEmail: email, password: password) { _, error in
-      if error == nil {
-        Auth.auth().signIn(withEmail: email, password: password)
-      } else {
-        print("Error in createUser: \(error?.localizedDescription ?? "")")
-      }
-    }
-  }
+ 
 }
 
 // MARK: - UITextFieldDelegate
