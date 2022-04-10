@@ -8,14 +8,14 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
-
+class HomeViewController: UIViewController {
+    @IBOutlet weak var backbutton: UINavigationItem!
     
 @IBOutlet weak var signOutTitle: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
      
-    
+        backbutton.hidesBackButton = true
         navigationItem.title = Auth.auth().currentUser?.email
         
         signOutTitle.title = "Sign Out"
