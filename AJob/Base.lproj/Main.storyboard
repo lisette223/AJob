@@ -138,11 +138,11 @@
             <objects>
                 <viewController id="1OL-Ay-OSt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atc-tj-bpf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1684"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1738"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udX-45-gd2">
-                                <rect key="frame" x="0.0" y="44" width="414" height="1640"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1616"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbQ-1S-WGB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
@@ -506,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ0-qj-M2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1952" y="957"/>
+            <point key="canvasLocation" x="-455" y="-348"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oAB-vn-Xxw">
@@ -609,7 +609,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="5aj-La-2dX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g5A-na-IEN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TUTOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwf-n8-RkH">
@@ -704,14 +704,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lY-1D-DwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1114" y="1357"/>
+            <point key="canvasLocation" x="-1445" y="1357"/>
         </scene>
         <!--Item-->
         <scene sceneID="uyK-hq-aZ7">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ciA-6e-zcG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bjN-Lm-ajg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAST FOOD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXa-EQ-7yJ">
@@ -794,7 +794,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ui6-hU-TcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="1357"/>
+            <point key="canvasLocation" x="-606" y="1405"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ldE-r9-JnM">
@@ -959,7 +959,7 @@
             <objects>
                 <tableViewController id="b8R-iN-dUJ" customClass="JobTableViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Nox-Ad-qox">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="D76-j5-FXr">
@@ -995,7 +995,9 @@
                             <outlet property="delegate" destination="b8R-iN-dUJ" id="PDZ-vj-Yc4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Job Opportunities" id="EcX-s6-aTy"/>
+                    <navigationItem key="navigationItem" title="Job Opportunities" id="EcX-s6-aTy">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="rGQ-b2-4Dm"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="jTable" destination="Nox-Ad-qox" id="gKu-Za-Qyd"/>
                         <outlet property="searchBar" destination="D76-j5-FXr" id="YmX-M8-sGg"/>
@@ -1004,18 +1006,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yup-vQ-AwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3101" y="1432"/>
+            <point key="canvasLocation" x="-2377" y="619"/>
         </scene>
         <!--Job Table DetailsVC-->
         <scene sceneID="cgj-5v-Up8">
             <objects>
                 <viewController id="tbQ-LB-oNy" customClass="JobTableDetailsVC" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G5m-jV-Eb6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="dnD-bF-Tsb">
-                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXZ-UT-U3i">
                                         <rect key="frame" x="167" y="0.0" width="80" height="41"/>
@@ -1030,7 +1032,7 @@
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UqH-b8-7x3">
-                                        <rect key="frame" x="20" y="290" width="374" height="390"/>
+                                        <rect key="frame" x="20" y="290" width="374" height="378"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -1038,7 +1040,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6AC-wa-DBd">
-                                        <rect key="frame" x="129" y="721" width="156" height="65"/>
+                                        <rect key="frame" x="129" y="709" width="156" height="65"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="1Ug-z7-AOM"/>
@@ -1065,7 +1067,9 @@
                             <constraint firstItem="dnD-bF-Tsb" firstAttribute="leading" secondItem="G5m-jV-Eb6" secondAttribute="leading" id="v1q-62-741"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PsR-Ej-9yX"/>
+                    <navigationItem key="navigationItem" id="PsR-Ej-9yX">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="u2e-Eq-vfm"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="jDescription" destination="UqH-b8-7x3" id="Tdp-mi-s5f"/>
                         <outlet property="jImage" destination="7yM-GT-N87" id="dEg-ll-YMt"/>
@@ -1075,31 +1079,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLf-dy-ZMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3477" y="2158"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eOY-7t-qYc">
-            <objects>
-                <navigationController id="zj7-Tt-kV6" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="l72-6X-x2h"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H9d-AH-c4U">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="b8R-iN-dUJ" kind="relationship" relationship="rootViewController" id="SPv-Xg-GhW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="121-Mv-cS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2683" y="676"/>
+            <point key="canvasLocation" x="-2526" y="1332"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZeU-Sv-UKa">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="rdb-T9-mgY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jzx-lv-Yul">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DEPARTMENT STORES:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YN-hw-hUR">
@@ -1214,7 +1201,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lPn-HG-aU6">
-                                <rect key="frame" x="0.0" y="44" width="414" height="802"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="758"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-A1-DKI">
                                         <rect key="frame" x="57" y="0.0" width="300.5" height="200"/>
@@ -1244,10 +1231,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zud-D9-id1">
-                                        <rect key="frame" x="71" y="200" width="272" height="602"/>
+                                        <rect key="frame" x="71" y="200" width="272" height="558"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3l-sp-vDz">
-                                                <rect key="frame" x="0.0" y="0.0" width="272" height="100.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="111.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="What are you looking for?">
                                                         <attributes>
@@ -1258,27 +1245,8 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjV-cZ-jJ1">
-                                                <rect key="frame" x="0.0" y="100.5" width="272" height="100"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <buttonConfiguration key="configuration" style="plain" title="TO APPLY TO A JOB">
-                                                    <backgroundConfiguration key="background">
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="19"/>
-                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="zj7-Tt-kV6" kind="show" id="DCl-np-wkX"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3i6-8v-nX0">
-                                                <rect key="frame" x="0.0" y="200.5" width="272" height="100.5"/>
+                                                <rect key="frame" x="0.0" y="111.5" width="272" height="111.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1294,7 +1262,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-2d-WQg">
-                                                <rect key="frame" x="0.0" y="301" width="272" height="100.5"/>
+                                                <rect key="frame" x="0.0" y="223" width="272" height="112"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1310,7 +1278,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-2V-LZ0">
-                                                <rect key="frame" x="0.0" y="401.5" width="272" height="100"/>
+                                                <rect key="frame" x="0.0" y="335" width="272" height="111.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1329,7 +1297,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCt-rN-Gn4">
-                                                <rect key="frame" x="0.0" y="501.5" width="272" height="100.5"/>
+                                                <rect key="frame" x="0.0" y="446.5" width="272" height="111.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1370,7 +1338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31B-l5-vN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2288" y="-58"/>
+            <point key="canvasLocation" x="-1717" y="-929"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="lXd-Yg-7I2">
@@ -1384,10 +1352,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="djW-yh-fhK">
-                                        <rect key="frame" x="14" y="0.0" width="386" height="774"/>
+                                        <rect key="frame" x="45" y="0.0" width="324" height="774"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="IIX-kB-QcW">
-                                                <rect key="frame" x="0.0" y="0.0" width="386" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="324" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-a4-Pb9">
                                                         <rect key="frame" x="0.0" y="152" width="26" height="48"/>
@@ -1396,14 +1364,14 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Student working" translatesAutoresizingMaskIntoConstraints="NO" id="6Dj-in-WPL">
-                                                        <rect key="frame" x="69" y="0.0" width="200" height="200"/>
+                                                        <rect key="frame" x="38" y="0.0" width="200" height="200"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="200" id="JYO-Ap-rnL"/>
                                                             <constraint firstAttribute="height" constant="200" id="LHi-HN-g0z"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpM-lA-QtH">
-                                                        <rect key="frame" x="311.5" y="152" width="74.5" height="48"/>
+                                                        <rect key="frame" x="249.5" y="152" width="74.5" height="48"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1414,15 +1382,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FGa-0b-3WG">
-                                                <rect key="frame" x="0.0" y="210" width="386" height="564"/>
+                                                <rect key="frame" x="0.0" y="210" width="324" height="564"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-nv-P0V">
-                                                        <rect key="frame" x="0.0" y="0.0" width="386" height="277"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="277"/>
                                                         <subviews>
                                                             <button toolTip="nnn" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98H-2Z-nov">
-                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="277"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="158" height="277"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="Application Guide">
+                                                                <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="Apply for Jobs">
                                                                     <backgroundConfiguration key="background">
                                                                         <color key="backgroundColor" red="0.40181297059999999" green="0.54537945990000003" blue="0.52941262720000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     </backgroundConfiguration>
@@ -1430,13 +1398,13 @@
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <segue destination="J0I-v2-5Xr" kind="show" id="m5W-eP-sID"/>
+                                                                    <segue destination="b8R-iN-dUJ" kind="show" id="4xW-HQ-sGk"/>
                                                                 </connections>
                                                             </button>
                                                             <button toolTip="jojij" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARf-sW-AoY">
-                                                                <rect key="frame" x="197" y="0.0" width="189" height="277"/>
+                                                                <rect key="frame" x="166" y="0.0" width="158" height="277"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="questionmark" catalog="system" title="Interview Tips">
+                                                                <buttonConfiguration key="configuration" style="plain" image="questionmark" catalog="system" title="Interest Survey">
                                                                     <backgroundConfiguration key="background">
                                                                         <color key="backgroundColor" red="0.8038985729" green="0.56988745929999995" blue="0.21163156629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     </backgroundConfiguration>
@@ -1444,19 +1412,19 @@
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <segue destination="qhy-23-k1c" kind="show" id="ar7-rq-hCb"/>
+                                                                    <segue destination="1OL-Ay-OSt" kind="show" id="Qib-X2-dHk"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pah-Px-462">
-                                                        <rect key="frame" x="0.0" y="287" width="386" height="277"/>
+                                                        <rect key="frame" x="0.0" y="287" width="324" height="277"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-Hk-fxV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="277"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="158" height="277"/>
                                                                 <color key="backgroundColor" systemColor="labelColor"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Interview questions">
+                                                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Interviews">
                                                                     <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
                                                                     <backgroundConfiguration key="background">
                                                                         <color key="backgroundColor" red="0.2538278699" green="0.044310189780000002" blue="0.12941423060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1465,19 +1433,22 @@
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <segue destination="INq-pq-TNu" kind="show" id="sTm-R9-xoW"/>
+                                                                    <segue destination="mV3-Hl-CUr" kind="show" id="CR5-vn-1ow"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNX-ik-2xc">
-                                                                <rect key="frame" x="197" y="0.0" width="189" height="277"/>
+                                                                <rect key="frame" x="166" y="0.0" width="158" height="277"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="Continue application">
+                                                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="Employers">
                                                                     <backgroundConfiguration key="background">
                                                                         <color key="backgroundColor" red="0.76864945890000003" green="0.2891743779" blue="0.14108625050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <segue destination="e6B-Lh-fLD" kind="show" id="urb-g5-VME"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -1511,9 +1482,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgL-Jf-vfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3762" y="-91"/>
+            <point key="canvasLocation" x="-2852.1739130434785" y="-91.071428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Interview Questions-->
         <scene sceneID="gAb-gG-8CF">
             <objects>
                 <viewController id="INq-pq-TNu" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
@@ -1555,6 +1526,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                         <viewLayoutGuide key="safeArea" id="KHa-Yj-DZo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Interview Questions" id="KGn-bm-1Be"/>
                     <navigationItem key="navigationItem" id="AmY-74-Vyh">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="oBa-4W-HuJ">
                             <connections>
@@ -1568,9 +1540,135 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFa-0c-5NG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3514" y="687"/>
+            <point key="canvasLocation" x="-5442" y="1436"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="ECQ-8Q-h3k">
+            <objects>
+                <viewController id="mV3-Hl-CUr" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XYI-0W-HOU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EEW-Oz-Bwp">
+                                <rect key="frame" x="50" y="100" width="314" height="712"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="B3l-xa-O1x">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApS-MI-w31">
+                                                <rect key="frame" x="0.0" y="152" width="26" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Student working" translatesAutoresizingMaskIntoConstraints="NO" id="Xzr-AS-ogA">
+                                                <rect key="frame" x="33" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="HJx-GQ-FfW"/>
+                                                    <constraint firstAttribute="height" constant="200" id="uDY-k1-BNF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1L-Ch-FSL">
+                                                <rect key="frame" x="239.5" y="152" width="74.5" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Xzr-AS-ogA" firstAttribute="top" secondItem="B3l-xa-O1x" secondAttribute="top" id="ffi-8Z-80c"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose from the Options Below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcO-pt-Lsu">
+                                        <rect key="frame" x="0.0" y="210" width="314" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="v1l-2z-DGt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NtM-TK-zil">
+                                        <rect key="frame" x="0.0" y="320" width="314" height="392"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MJ2-54-vqe">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="191"/>
+                                                <subviews>
+                                                    <button toolTip="nnn" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ3-bv-eeV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="191"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="Tips and Tricks">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.40181297059999999" green="0.54537945990000003" blue="0.52941262720000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="26"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="J0I-v2-5Xr" kind="show" id="cYc-G2-UCo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button toolTip="jojij" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jod-cb-Tbs">
+                                                        <rect key="frame" x="161" y="0.0" width="153" height="191"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="questionmark" catalog="system" title="Videos">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.8038985729" green="0.56988745929999995" blue="0.21163156629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="qhy-23-k1c" kind="show" id="h6D-8F-gUP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rPK-dO-jAc">
+                                                <rect key="frame" x="0.0" y="201" width="314" height="191"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPL-Gz-lRB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="191"/>
+                                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Sample Questions">
+                                                            <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.2538278699" green="0.044310189780000002" blue="0.12941423060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="INq-pq-TNu" kind="show" id="oRp-o7-AnE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s60-hK-tW6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s60-hK-tW6" firstAttribute="bottom" secondItem="EEW-Oz-Bwp" secondAttribute="bottom" constant="50" id="2dT-Fa-6TW"/>
+                            <constraint firstItem="EEW-Oz-Bwp" firstAttribute="top" secondItem="XYI-0W-HOU" secondAttribute="top" constant="100" id="QVY-5t-8kW"/>
+                            <constraint firstAttribute="trailing" secondItem="EEW-Oz-Bwp" secondAttribute="trailing" constant="50" id="lxI-UJ-Grk"/>
+                            <constraint firstItem="EEW-Oz-Bwp" firstAttribute="leading" secondItem="s60-hK-tW6" secondAttribute="leading" constant="50" id="maM-dZ-eC1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RCu-9R-U2I">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="UWc-Dg-Qk7"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8o-TK-sXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3678" y="620"/>
+        </scene>
+        <!--Tips and Tricks-->
         <scene sceneID="aSy-9u-fg2">
             <objects>
                 <viewController id="J0I-v2-5Xr" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
@@ -1584,12 +1682,6 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9L-W3-UXn">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Interview tips &amp; tricks" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dbk-cq-hTd">
-                                                <rect key="frame" x="20" y="86" width="374" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YXj-0i-OBQ">
                                                 <rect key="frame" x="20" y="182" width="374" height="736"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1609,6 +1701,13 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Tips &amp; tricks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpr-dO-Rsx">
+                                                <rect key="frame" x="20" y="29" width="394" height="69"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -1636,6 +1735,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                             <constraint firstItem="18x-9a-rb3" firstAttribute="top" secondItem="tlP-Ys-bKU" secondAttribute="top" id="vCX-HQ-Fhl"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Tips and Tricks" id="EMZ-f2-Gl5"/>
                     <navigationItem key="navigationItem" id="MOU-xb-dYF">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="acs-HN-xny">
                             <connections>
@@ -1650,7 +1750,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTo-r0-MFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4986" y="686"/>
+            <point key="canvasLocation" x="-4188" y="1588"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="xaS-OO-vrx">
@@ -1841,9 +1941,9 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLC-cY-uFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1048" y="635"/>
+            <point key="canvasLocation" x="-1394" y="433"/>
         </scene>
-        <!--View Controller-->
+        <!--Sample Interview Answers-->
         <scene sceneID="InT-Zl-xQ1">
             <objects>
                 <viewController id="qhy-23-k1c" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
@@ -1863,6 +1963,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                         <viewLayoutGuide key="safeArea" id="ouW-VC-VCQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Sample Interview Answers" id="iw2-sy-FvT"/>
                     <navigationItem key="navigationItem" id="xqe-qk-ZDk">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="kqt-Zi-ipP">
                             <connections>
@@ -1876,7 +1977,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgL-7z-Hau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4271" y="651"/>
+            <point key="canvasLocation" x="-3426" y="1579"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tUf-mf-LVq">
@@ -1899,6 +2000,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="z1P-jA-Vk4"/>
+        <segue reference="aTo-bU-9jZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Facebook-Logo-Square-768x768" width="768" height="768"/>
