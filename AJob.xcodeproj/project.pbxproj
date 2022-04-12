@@ -13,12 +13,15 @@
 		5B19679027B57FB1001A3CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B19678E27B57FB1001A3CAE /* Main.storyboard */; };
 		5B19679227B57FB3001A3CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B19679127B57FB3001A3CAE /* Assets.xcassets */; };
 		5B19679527B57FB3001A3CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B19679327B57FB3001A3CAE /* LaunchScreen.storyboard */; };
+		5B8AADDD2803689400C249E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AADDC2803689400C249E7 /* HomeViewController.swift */; };
+		5B8C0C5627FC7A2F00A30BE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C0C5527FC7A2F00A30BE8 /* LoginViewController.swift */; };
+		5B8C0C8F27FCB05D00A30BE8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8C0C8E27FCB05D00A30BE8 /* FirebaseAuth */; };
+		5B8C0C9127FCB3F000A30BE8 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8C0C9027FCB3F000A30BE8 /* FirebaseDatabase */; };
 		5BED29B627D4202B00DF4EB0 /* Jobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29B527D4202B00DF4EB0 /* Jobs.swift */; };
 		5BED29B827D4213300DF4EB0 /* JobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */; };
 		5BED29BA27D42C8600DF4EB0 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */; };
 		5BED29BC27D5331D00DF4EB0 /* JobTableDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */; };
 		5BED29C027D7EEC400DF4EB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BED29BF27D7EEC400DF4EB0 /* GoogleService-Info.plist */; };
-		5BED29C327D7F02F00DF4EB0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5BED29C227D7F02F00DF4EB0 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,8 @@
 		5B19679127B57FB3001A3CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B19679427B57FB3001A3CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B19679627B57FB3001A3CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B8AADDC2803689400C249E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5B8C0C5527FC7A2F00A30BE8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5BED29B527D4202B00DF4EB0 /* Jobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jobs.swift; sourceTree = "<group>"; };
 		5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
 		5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
@@ -42,7 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BED29C327D7F02F00DF4EB0 /* FirebaseAnalytics in Frameworks */,
+				5B8C0C9127FCB3F000A30BE8 /* FirebaseDatabase in Frameworks */,
+				5B8C0C8F27FCB05D00A30BE8 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +60,7 @@
 			children = (
 				5B19678727B57FB1001A3CAE /* AJob */,
 				5B19678627B57FB1001A3CAE /* Products */,
+				5B8C0C5927FC925300A30BE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +79,10 @@
 				5B19678827B57FB1001A3CAE /* AppDelegate.swift */,
 				5B19678A27B57FB1001A3CAE /* SceneDelegate.swift */,
 				5B19678C27B57FB1001A3CAE /* ViewController.swift */,
+				5B8AADDC2803689400C249E7 /* HomeViewController.swift */,
 				5BED29BF27D7EEC400DF4EB0 /* GoogleService-Info.plist */,
 				5B19678E27B57FB1001A3CAE /* Main.storyboard */,
+				5B8C0C5527FC7A2F00A30BE8 /* LoginViewController.swift */,
 				5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */,
 				5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */,
 				5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */,
@@ -82,6 +91,13 @@
 				5B19679627B57FB3001A3CAE /* Info.plist */,
 			);
 			path = AJob;
+			sourceTree = "<group>";
+		};
+		5B8C0C5927FC925300A30BE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +117,8 @@
 			);
 			name = AJob;
 			packageProductDependencies = (
-				5BED29C227D7F02F00DF4EB0 /* FirebaseAnalytics */,
+				5B8C0C8E27FCB05D00A30BE8 /* FirebaseAuth */,
+				5B8C0C9027FCB3F000A30BE8 /* FirebaseDatabase */,
 			);
 			productName = AJob;
 			productReference = 5B19678527B57FB1001A3CAE /* AJob.app */;
@@ -166,6 +183,8 @@
 				5B19678927B57FB1001A3CAE /* AppDelegate.swift in Sources */,
 				5BED29B827D4213300DF4EB0 /* JobTableViewController.swift in Sources */,
 				5BED29BA27D42C8600DF4EB0 /* JobTableViewCell.swift in Sources */,
+				5B8C0C5627FC7A2F00A30BE8 /* LoginViewController.swift in Sources */,
+				5B8AADDD2803689400C249E7 /* HomeViewController.swift in Sources */,
 				5B19678B27B57FB1001A3CAE /* SceneDelegate.swift in Sources */,
 				5BED29BC27D5331D00DF4EB0 /* JobTableDetailsVC.swift in Sources */,
 				5BED29B627D4202B00DF4EB0 /* Jobs.swift in Sources */,
@@ -401,10 +420,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5BED29C227D7F02F00DF4EB0 /* FirebaseAnalytics */ = {
+		5B8C0C8E27FCB05D00A30BE8 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5BED29C127D7F02F00DF4EB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
+			productName = FirebaseAuth;
+		};
+		5B8C0C9027FCB3F000A30BE8 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BED29C127D7F02F00DF4EB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
