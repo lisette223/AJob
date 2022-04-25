@@ -1259,14 +1259,14 @@
             <objects>
                 <viewController id="INq-pq-TNu" customClass="ViewController" customModule="AJob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="foK-2c-1AU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="835"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="85y-CY-MPg">
-                                <rect key="frame" x="20" y="88" width="374" height="1012"/>
+                                <rect key="frame" x="20" y="88" width="374" height="747"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdw-WP-DQY">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="1100"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdw-WP-DQY">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="1311"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-Jz-ayS">
                                                 <rect key="frame" x="0.0" y="119" width="374" height="47"/>
@@ -1344,8 +1344,48 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="4) What are your biggest strengths?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qF9-ha-9Rj">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="5) What is your biggest weakness?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qF9-ha-9Rj">
                                                 <rect key="frame" x="0.0" y="761" width="374" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Talk about a weakness u have that wont jeperdize you gettting the job" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZGI-5a-R3e">
+                                                <rect key="frame" x="0.0" y="831" width="374" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="6) What do you know about this company/organization?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M69-93-U1D">
+                                                <rect key="frame" x="0.0" y="910" width="374" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Explain how you know about the company" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KFR-sj-ylM">
+                                                <rect key="frame" x="0.0" y="980" width="374" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="7) Why should we hire you?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Cy-sI-PQV">
+                                                <rect key="frame" x="0.0" y="1059" width="374" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tell them basically what you said before but in a list of your strengths and what makes you different" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HWV-ow-24j">
+                                                <rect key="frame" x="0.0" y="1129" width="374" height="84"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
@@ -1358,28 +1398,7 @@
                                             <constraint firstAttribute="height" constant="1100" id="Koy-AX-MUU"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shy-Kd-VyG">
-                                        <rect key="frame" x="34" y="887" width="306" height="497"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">2) How did you hear about this position?
-3) Why did you decide to apply for this position?
-4) What are your biggest strengths?
-5) What is your biggest weakness?
-6) What do you know about this company/organization?
-7) Why should we hire you?
-8) What are your salary requirements?
-9) Do you have any questions for us?
-10) What are you looking for in a new position?
-11) Are you considering other positions in other companies?
-12) What is the professional achievement you’re most proud of?
-13) What kind of work environment do you like best?
-14) Where do you see yourself in five years? 
 
-Disclaimer: These question are generally what any fastfood or type of casual job will ask you.                                 </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wdw-WP-DQY" firstAttribute="bottom" secondItem="Xq0-BC-tMC" secondAttribute="bottom" id="9i8-cV-XE6"/>
@@ -1408,14 +1427,14 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="414" height="1100"/>
+                    <size key="freeformSize" width="414" height="835"/>
                     <connections>
                         <outlet property="signOutTitle" destination="oBa-4W-HuJ" id="xOV-ua-7yA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFa-0c-5NG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5442.0289855072469" y="1435.7142857142856"/>
+            <point key="canvasLocation" x="-5442.0289855072469" y="1346.9866071428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ECQ-8Q-h3k">
@@ -1814,7 +1833,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLC-cY-uFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1394" y="433"/>
+            <point key="canvasLocation" x="-1184" y="445"/>
         </scene>
         <!--Sample Interview Answers-->
         <scene sceneID="InT-Zl-xQ1">
