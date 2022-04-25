@@ -1361,7 +1361,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shy-Kd-VyG">
                                         <rect key="frame" x="34" y="887" width="306" height="497"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">2) How did you hear about this position?
+                                        <string key="text">2) How did you hear about this position?
 3) Why did you decide to apply for this position?
 4) What are your biggest strengths?
 5) What is your biggest weakness?
@@ -1375,7 +1375,7 @@
 13) What kind of work environment do you like best?
 14) Where do you see yourself in five years? 
 
-Disclaimer: These question are generally what any fastfood or type of casual job will ask you.                                 </mutableString>
+Disclaimer: These question are generally what any fastfood or type of casual job will ask you.                                 </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1561,7 +1561,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
                                                 <rect key="frame" x="20" y="182" width="374" height="736"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <mutableString key="text">1) Alway be honest with your answers never lie to your employer.
+                                                <string key="text">1) Alway be honest with your answers never lie to your employer.
 
 2) Keep your cool and try your best to not stutter or freak out at all. 
 
@@ -1571,7 +1571,7 @@ Disclaimer: These question are generally what any fastfood or type of casual job
 
 5) Make sure to have a good breakfast or something that will help you stay up and ready for the interview.
 
-6) Be prepared for anything not just the question that are listed in our Interview Questions tab be prepared to answer life questions.</mutableString>
+6) Be prepared for anything not just the question that are listed in our Interview Questions tab be prepared to answer life questions.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
