@@ -1428,9 +1428,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="835"/>
-                    <connections>
-                        <outlet property="signOutTitle" destination="oBa-4W-HuJ" id="xOV-ua-7yA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFa-0c-5NG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
