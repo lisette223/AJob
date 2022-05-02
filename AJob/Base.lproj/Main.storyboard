@@ -887,7 +887,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLf-dy-ZMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2526" y="1332"/>
+            <point key="canvasLocation" x="-2526.0869565217395" y="1331.9196428571429"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZeU-Sv-UKa">
@@ -1398,7 +1398,6 @@
                                             <constraint firstAttribute="height" constant="1100" id="Koy-AX-MUU"/>
                                         </constraints>
                                     </view>
-
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wdw-WP-DQY" firstAttribute="bottom" secondItem="Xq0-BC-tMC" secondAttribute="bottom" id="9i8-cV-XE6"/>
