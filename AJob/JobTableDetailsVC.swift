@@ -23,7 +23,7 @@ class JobTableDetailsVC: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
 
         jTitle.text = "\((allJobs.jobs[indexpath].name))"
-        jDescription.text = "\((allJobs.jobs[indexpath].description))"
+        jDescription.text = "\((allJobs.jobs[indexpath].description)) \n\n \((allJobs.jobs[indexpath].requirements))"
         
         jImage.image = ((allJobs.jobs[indexpath].image))
         

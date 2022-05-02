@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "89906355-man-is-walking-with-a-dog-vector-illustration-in-a-flat-style.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
