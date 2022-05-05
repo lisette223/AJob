@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func signOut(_ sender: Any) {
        
         // 1
-        guard let user = Auth.auth().currentUser else { return }
+       // guard let user = Auth.auth().currentUser else { return }
        
           // 4
           do {
@@ -36,7 +36,12 @@ class ViewController: UIViewController {
           }
         }
 
-  
+    @IBAction func youTube(_ sender: UIButton) {
+        if let url = URL(string: "https://www.youtube.com/c/CareerVidz/videos") {
+              UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    }
+    
 }
 
  
