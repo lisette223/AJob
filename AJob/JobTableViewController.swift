@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class JobTableViewController: UITableViewController , UISearchBarDelegate{
 
@@ -78,7 +80,20 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
     }
     
     
- 
+    @IBAction func signOut(_ sender: Any) {
+       
+        // 1
+        guard let user = Auth.auth().currentUser else { return }
+       
+          // 4
+          do {
+            try Auth.auth().signOut()
+            self.navigationController?.popToRootViewController(animated: true)
+          } catch let error {
+            print("Auth sign out failed: \(error)")
+          }
+        }
+
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let announce = filteredJobs[section]
