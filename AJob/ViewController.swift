@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
         navigationItem.title = Auth.auth().currentUser?.email
         
-       // signOutTitle.title = "Sign Out"
+      // signOutTitle.title = "Sign Out"
     }
     
     

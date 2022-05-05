@@ -18,26 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-AL-5Eh">
-                                <rect key="frame" x="0.0" y="88" width="414" height="617"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="724"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="H3J-P3-Cft">
-                                        <rect key="frame" x="57" y="0.0" width="300.5" height="200"/>
+                                        <rect key="frame" x="57" y="0.0" width="300.5" height="307"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-dq-sTG">
-                                                <rect key="frame" x="0.0" y="152" width="26" height="48"/>
+                                                <rect key="frame" x="0.0" y="259" width="26" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Student working" translatesAutoresizingMaskIntoConstraints="NO" id="374-6C-qOy">
-                                                <rect key="frame" x="26" y="0.0" width="200" height="200"/>
+                                                <rect key="frame" x="26" y="107" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="8vg-CY-lGQ"/>
                                                     <constraint firstAttribute="width" constant="200" id="nW7-yd-dTI"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-SR-E8J">
-                                                <rect key="frame" x="226" y="152" width="74.5" height="48"/>
+                                                <rect key="frame" x="226" y="259" width="74.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -48,7 +48,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="yEd-GU-lxQ">
-                                        <rect key="frame" x="7" y="259" width="400" height="140"/>
+                                        <rect key="frame" x="7" y="366" width="400" height="140"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6n4-Rt-bXh">
                                                 <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
@@ -72,7 +72,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srp-kF-Ygr">
-                                        <rect key="frame" x="57" y="458" width="300" height="50"/>
+                                        <rect key="frame" x="57" y="565" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Vvu-Ww-sST"/>
                                             <constraint firstAttribute="height" constant="50" id="ol7-sP-Qej"/>
@@ -94,7 +94,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQn-Sy-8J4">
-                                        <rect key="frame" x="57" y="567" width="300" height="50"/>
+                                        <rect key="frame" x="57" y="674" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="Dqf-5h-x2D"/>
                                             <constraint firstAttribute="height" constant="50" id="ZgS-CL-vYi"/>
@@ -804,7 +804,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Job Opportunities" id="EcX-s6-aTy">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="rGQ-b2-4Dm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="rGQ-b2-4Dm">
+                            <connections>
+                                <action selector="signOut:" destination="b8R-iN-dUJ" id="3op-wP-BY9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="jTable" destination="Nox-Ad-qox" id="gKu-Za-Qyd"/>
@@ -876,7 +880,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PsR-Ej-9yX">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="u2e-Eq-vfm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="u2e-Eq-vfm"/>
                     </navigationItem>
                     <connections>
                         <outlet property="jDescription" destination="UqH-b8-7x3" id="Tdp-mi-s5f"/>
@@ -1100,7 +1104,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eLW-fM-H4v">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="ZxG-0W-XKM"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="ZxG-0W-XKM">
+                            <connections>
+                                <action selector="signOut:" destination="e6B-Lh-fLD" id="UBB-OW-tmn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="signOutTitle" destination="ZxG-0W-XKM" id="g44-kV-I9D"/>
@@ -1239,7 +1247,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="50h-SP-Iig">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="PgG-QX-dW9">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="PgG-QX-dW9">
                             <connections>
                                 <action selector="signOut:" destination="95B-09-RT6" id="LQS-VI-ZZt"/>
                             </connections>
@@ -1398,7 +1406,6 @@
                                             <constraint firstAttribute="height" constant="1100" id="Koy-AX-MUU"/>
                                         </constraints>
                                     </view>
-
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wdw-WP-DQY" firstAttribute="bottom" secondItem="Xq0-BC-tMC" secondAttribute="bottom" id="9i8-cV-XE6"/>
@@ -1421,9 +1428,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Interview Questions" id="KGn-bm-1Be"/>
                     <navigationItem key="navigationItem" id="AmY-74-Vyh">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="oBa-4W-HuJ">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="oBa-4W-HuJ">
                             <connections>
-                                <action selector="signOut:" destination="INq-pq-TNu" id="pxI-lD-aqw"/>
+                                <action selector="signOut:" destination="INq-pq-TNu" id="mxz-Zw-M1e"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1552,7 +1559,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RCu-9R-U2I">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="UWc-Dg-Qk7"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="UWc-Dg-Qk7"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8o-TK-sXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1628,7 +1635,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tips and Tricks" id="EMZ-f2-Gl5"/>
                     <navigationItem key="navigationItem" id="MOU-xb-dYF">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="acs-HN-xny">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="acs-HN-xny">
                             <connections>
                                 <action selector="signOut:" destination="J0I-v2-5Xr" id="sEY-Du-YEz"/>
                             </connections>
@@ -1854,7 +1861,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Sample Interview Answers" id="iw2-sy-FvT"/>
                     <navigationItem key="navigationItem" id="xqe-qk-ZDk">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="kqt-Zi-ipP">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="kqt-Zi-ipP">
                             <connections>
                                 <action selector="signOut:" destination="qhy-23-k1c" id="ymD-x4-0vp"/>
                             </connections>
