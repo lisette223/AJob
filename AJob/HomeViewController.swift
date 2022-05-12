@@ -15,10 +15,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        backbutton.hidesBackButton = true
+       backbutton.hidesBackButton = true
         navigationItem.title = Auth.auth().currentUser?.email
         
-        signOutTitle.title = "Sign Out"
+       // signOutTitle.title = "Sign Out"
     }
     
     

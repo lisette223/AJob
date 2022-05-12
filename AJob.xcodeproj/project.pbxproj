@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B05ECF5282D497D00337045 /* Mentors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B05ECF4282D497C00337045 /* Mentors.swift */; };
+		5B05ECF7282D4A6C00337045 /* MentorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B05ECF6282D4A6800337045 /* MentorTableViewController.swift */; };
+		5B05ECF9282D580C00337045 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B05ECF8282D580C00337045 /* MentorViewController.swift */; };
+		5B05ECFB282D5E1700337045 /* InternshipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B05ECFA282D5E1700337045 /* InternshipTableViewController.swift */; };
 		5B19678927B57FB1001A3CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19678827B57FB1001A3CAE /* AppDelegate.swift */; };
 		5B19678B27B57FB1001A3CAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19678A27B57FB1001A3CAE /* SceneDelegate.swift */; };
 		5B19678D27B57FB1001A3CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19678C27B57FB1001A3CAE /* ViewController.swift */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B05ECF4282D497C00337045 /* Mentors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentors.swift; sourceTree = "<group>"; };
+		5B05ECF6282D4A6800337045 /* MentorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewController.swift; sourceTree = "<group>"; };
+		5B05ECF8282D580C00337045 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
+		5B05ECFA282D5E1700337045 /* InternshipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternshipTableViewController.swift; sourceTree = "<group>"; };
 		5B19678527B57FB1001A3CAE /* AJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B19678827B57FB1001A3CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B19678A27B57FB1001A3CAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				5BED29B527D4202B00DF4EB0 /* Jobs.swift */,
+				5B05ECF4282D497C00337045 /* Mentors.swift */,
 				5B19678827B57FB1001A3CAE /* AppDelegate.swift */,
 				5B19678A27B57FB1001A3CAE /* SceneDelegate.swift */,
 				5B19678C27B57FB1001A3CAE /* ViewController.swift */,
@@ -84,8 +93,11 @@
 				5B19678E27B57FB1001A3CAE /* Main.storyboard */,
 				5B8C0C5527FC7A2F00A30BE8 /* LoginViewController.swift */,
 				5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */,
+				5B05ECF8282D580C00337045 /* MentorViewController.swift */,
 				5BED29B927D42C8600DF4EB0 /* JobTableViewCell.swift */,
 				5BED29B727D4213300DF4EB0 /* JobTableViewController.swift */,
+				5B05ECFA282D5E1700337045 /* InternshipTableViewController.swift */,
+				5B05ECF6282D4A6800337045 /* MentorTableViewController.swift */,
 				5B19679127B57FB3001A3CAE /* Assets.xcassets */,
 				5B19679327B57FB3001A3CAE /* LaunchScreen.storyboard */,
 				5B19679627B57FB3001A3CAE /* Info.plist */,
@@ -179,13 +191,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B05ECF5282D497D00337045 /* Mentors.swift in Sources */,
+				5B05ECFB282D5E1700337045 /* InternshipTableViewController.swift in Sources */,
 				5B19678D27B57FB1001A3CAE /* ViewController.swift in Sources */,
 				5B19678927B57FB1001A3CAE /* AppDelegate.swift in Sources */,
 				5BED29B827D4213300DF4EB0 /* JobTableViewController.swift in Sources */,
 				5BED29BA27D42C8600DF4EB0 /* JobTableViewCell.swift in Sources */,
+				5B05ECF7282D4A6C00337045 /* MentorTableViewController.swift in Sources */,
 				5B8C0C5627FC7A2F00A30BE8 /* LoginViewController.swift in Sources */,
 				5B8AADDD2803689400C249E7 /* HomeViewController.swift in Sources */,
 				5B19678B27B57FB1001A3CAE /* SceneDelegate.swift in Sources */,
+				5B05ECF9282D580C00337045 /* MentorViewController.swift in Sources */,
 				5BED29BC27D5331D00DF4EB0 /* JobTableDetailsVC.swift in Sources */,
 				5BED29B627D4202B00DF4EB0 /* Jobs.swift in Sources */,
 			);
