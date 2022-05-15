@@ -17,6 +17,7 @@
 		5B19679027B57FB1001A3CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B19678E27B57FB1001A3CAE /* Main.storyboard */; };
 		5B19679227B57FB3001A3CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B19679127B57FB3001A3CAE /* Assets.xcassets */; };
 		5B19679527B57FB3001A3CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B19679327B57FB3001A3CAE /* LaunchScreen.storyboard */; };
+		5B22C93C2830B9830023FE4D /* TabBarSTEM Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22C93B2830B9830023FE4D /* TabBarSTEM Controller.swift */; };
 		5B8AADDD2803689400C249E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AADDC2803689400C249E7 /* HomeViewController.swift */; };
 		5B8C0C5627FC7A2F00A30BE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C0C5527FC7A2F00A30BE8 /* LoginViewController.swift */; };
 		5B8C0C8F27FCB05D00A30BE8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8C0C8E27FCB05D00A30BE8 /* FirebaseAuth */; };
@@ -41,6 +42,7 @@
 		5B19679127B57FB3001A3CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B19679427B57FB3001A3CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B19679627B57FB3001A3CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B22C93B2830B9830023FE4D /* TabBarSTEM Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarSTEM Controller.swift"; sourceTree = "<group>"; };
 		5B8AADDC2803689400C249E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5B8C0C5527FC7A2F00A30BE8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5BED29B527D4202B00DF4EB0 /* Jobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jobs.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				5B8AADDC2803689400C249E7 /* HomeViewController.swift */,
 				5BED29BF27D7EEC400DF4EB0 /* GoogleService-Info.plist */,
 				5B19678E27B57FB1001A3CAE /* Main.storyboard */,
+				5B22C93B2830B9830023FE4D /* TabBarSTEM Controller.swift */,
 				5B8C0C5527FC7A2F00A30BE8 /* LoginViewController.swift */,
 				5BED29BB27D5331D00DF4EB0 /* JobTableDetailsVC.swift */,
 				5B05ECF8282D580C00337045 /* MentorViewController.swift */,
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B05ECF5282D497D00337045 /* Mentors.swift in Sources */,
+				5B22C93C2830B9830023FE4D /* TabBarSTEM Controller.swift in Sources */,
 				5B05ECFB282D5E1700337045 /* InternshipTableViewController.swift in Sources */,
 				5B19678D27B57FB1001A3CAE /* ViewController.swift in Sources */,
 				5B19678927B57FB1001A3CAE /* AppDelegate.swift in Sources */,
