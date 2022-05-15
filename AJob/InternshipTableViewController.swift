@@ -26,10 +26,10 @@ class InternshipTableViewController: UITableViewController , UISearchBarDelegate
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var jTable: UITableView!
     
-    var science = [ListOfJobs(type: "Science", jobs: [Jobs(name: "String", description: "String", requirements: "String", link: "String", image: #imageLiteral(resourceName: "96325802-female-babysitter-playing-with-baby-boy-"))])]
-    var tech = [ListOfJobs(type: "Technology", jobs: [Jobs(name: "String", description: "String", requirements: "String", link: "String", image: #imageLiteral(resourceName: "google-logo-png-suite-everything-you-need-know-about-google-newest-0"))])]
-var engineering = [ListOfJobs(type: "Engineering", jobs: [Jobs(name: "String", description: "String", requirements: "String", link: "String", image: #imageLiteral(resourceName: "Screen Shot 2022-03-04 at 9.24.39 AM"))])]
-    var math = [ListOfJobs(type: "Mathematics", jobs: [Jobs(name: "String", description: "String", requirements: "String", link: "String", image: #imageLiteral(resourceName: "Screen Shot 2022-03-04 at 9.24.00 AM"))])]
+    var science = [ListOfJobs(type: "Science", jobs: [Jobs(name: "Biomedical Research Intern", description: "The OITE also offers a wide range of summer high school activities including lectures featuring distinguished NIH investigators, career/professional development workshops, college readiness activities, and Summer Poster Day", requirements: "High school applicants who will be 17 on June 15, 2021, and would like to request a waiver of the requirement that, at the time of application, they live within 40 miles of the NIH campus at which they hope to intern, should check the HS-SIP FAQs for guidance on requesting a waiver of this requirement", link: "https://sipsnow.com/job/national-institutes-of-health-bethesda-md-30-summer-internships-in-biomedical-research-for-high-school-students/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic", image: #imageLiteral(resourceName: "channels4_profile"))])]
+    var tech = [ListOfJobs(type: "Technology", jobs: [Jobs(name: "Tech Intern", description: "The intern will be assigned related roles for their field on programs or special projects consistent with the level of education and experience of the individual candidate", requirements: "Current high school student who will complete their senior year by Spring 2022 and will be 18 years of age", link: "https://jobs.baesystems.com/global/en/job/71825BR/Tech-Intern-High-School-Summer-2022?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic", image: #imageLiteral(resourceName: "Screen Shot 2022-05-15 at 6.56.12 PM"))])]
+var engineering = [ListOfJobs(type: "Engineering", jobs: [Jobs(name: "Engineering Intern", description: "An intern in this position will work closely with a team of engineers in a technical application area such as military aircraft avionics, mission systems, sensor subsystems or mail handling systems, unmanned vehicles, mission planning, simulation or automation", requirements: "Candidates that have a strong desire to engage, and understand the fundamentals of engineering are encouraged to apply", link: "https://tarta.ai/j/ihbbFIABCr2uuunQM35O-engineering-high-school-intern-in-new-york-ny-at-lockheed-martin?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic", image: #imageLiteral(resourceName: "mKdx6PgL_400x400.jpg"))])]
+    //var math = [ListOfJobs(type: "Mathematics", jobs: [Jobs(name: "", description: "", requirements: "", link: "", image: #imageLiteral(resourceName: "Screen Shot 2022-03-04 at 9.24.00 AM"))])]
 
     
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ var engineering = [ListOfJobs(type: "Engineering", jobs: [Jobs(name: "String", d
         jobs.append(contentsOf:tech)
         jobs.append(contentsOf:engineering)
 
-        jobs.append(contentsOf:math)
+       // jobs.append(contentsOf:math)
         searchBar.delegate = self
         
      
@@ -171,7 +171,7 @@ var engineering = [ListOfJobs(type: "Engineering", jobs: [Jobs(name: "String", d
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let destination = segue.destination as? JobTableDetailsVC {
+        if let destination = segue.destination as? InternshipViewController {
             destination.allJobs = filteredJobs[(jTable.indexPathForSelectedRow?.section)!]
             destination.indexpath = jTable.indexPathForSelectedRow?.row ?? 0
             jTable.deselectRow(at: jTable.indexPathForSelectedRow!, animated: true)
