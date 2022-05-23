@@ -17,7 +17,7 @@ class MentorTableViewController: UITableViewController , UISearchBarDelegate{
     var filteredMentors:[ListOfMentors]!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var jTable: UITableView!
-    var tech = [ListOfMentors(type: "Technology", mentors: [Mentor(name: "Jane Smith", profession: "Programmer", jobDescription: "Computer Programmer, or Systems Programmer, writes code to help software applications operate more efficiently. Their duties include designing and updating software solutions, writing and updating source-code and managing various operating systems.\n\nPlace of Work: Apple", contactInfo:"abc@gmail.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-03 at 9.19.21 AM"))])]
+    var tech = [ListOfMentors(type: "Technology", mentors: [Mentor(name: "Jane Smith", profession: "Programmer", jobDescription: "I am a computer programmer. My  duties include designing and updating software solutions, writing and updating source-code and managing various operating systems.\n\nPlace of Work: Apple", contactInfo:"Contact Info:abc@gmail.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-03 at 9.19.21 AM"))])]
 
    
     override func viewDidLoad() {
