@@ -17,18 +17,15 @@ class MentorTableViewController: UITableViewController , UISearchBarDelegate{
     var filteredMentors:[ListOfMentors]!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var jTable: UITableView!
-    var science = [ListOfMentors(type: "Science", mentors: [Mentor(name: "John Smith", profession: "Doctor", jobDescription: "String", contactInfo:"abc@gmail.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-03 at 9.19.21 AM"))])]
-    var tech = [ListOfMentors(type: "Technology", mentors: [Mentor(name: "John Smith", profession: "Doctor", jobDescription: "String", contactInfo:"abc@gmail.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-03 at 9.19.21 AM"))])]
-    var eng = [ListOfMentors(type: "Engineering", mentors: [Mentor(name: "John Smith", profession: "Doctor", jobDescription: "String", contactInfo:"abc@gmail.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-03 at 9.19.21 AM"))])]
-    var math = [ListOfMentors(type: "Mathematics", mentors: [Mentor(name: "John Smith", profession: "Doctor", jobDescription: "String", contactInfo:"abc@gmail.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-03 at 9.19.21 AM"))])]
+    var tech = [ListOfMentors(type: "Technology", mentors: [Mentor(name: "Jane Smith", profession: "Programmer", jobDescription: "Computer Programmer, or Systems Programmer, writes code to help software applications operate more efficiently. Their duties include designing and updating software solutions, writing and updating source-code and managing various operating systems.\n\nPlace of Work: Apple", contactInfo:"abc@gmail.com", image: #imageLiteral(resourceName: "Screen Shot 2022-03-03 at 9.19.21 AM"))])]
+
    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.rowHeight = 50
-        mentors.append(contentsOf:science)
+       // mentors.append(contentsOf:science)
         mentors.append(contentsOf:tech)
-        mentors.append(contentsOf:eng)
-        mentors.append(contentsOf:math)
+  
    
         searchBar.delegate = self
         
