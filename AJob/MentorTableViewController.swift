@@ -26,7 +26,8 @@ class MentorTableViewController: UITableViewController , UISearchBarDelegate{
        // mentors.append(contentsOf:science)
         mentors.append(contentsOf:tech)
   
-   
+        navigationItem.title = Auth.auth().currentUser?.email
+
         searchBar.delegate = self
         
      
