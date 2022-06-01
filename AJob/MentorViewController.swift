@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class MentorViewController: UIViewController, UITextViewDelegate {
 
@@ -27,7 +29,8 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
         jImage.image = ((allJobs.mentors[indexpath].image))
         
-   
+        navigationItem.title = Auth.auth().currentUser?.email
+
         
       //  let attributedString = NSMutableAttributedString(string: "Click here to apply")
      //   attributedString.addAttribute(.link, value: "\((allJobs.jobs[indexpath].link))", range: NSRange(location: 0, length: "Click here to apply".count))

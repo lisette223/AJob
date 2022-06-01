@@ -41,7 +41,8 @@ var engineering = [ListOfJobs(type: "Engineering", jobs: [Jobs(name: "Engineerin
 
        // jobs.append(contentsOf:math)
         searchBar.delegate = self
-        
+        navigationItem.title = Auth.auth().currentUser?.email
+
      
         filteredJobs = jobs
         // Uncomment the following line to preserve selection between presentations

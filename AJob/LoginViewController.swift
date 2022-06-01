@@ -22,6 +22,8 @@ class LoginViewController: UIViewController {
     super.viewDidLoad()
      // enterEmail.delegate = self
       //enterPassword.delegate = self
+      navigationItem.title = Auth.auth().currentUser?.email
+
   }
 
   override func viewWillAppear(_ animated: Bool) {

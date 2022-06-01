@@ -36,6 +36,7 @@ class JobTableViewController: UITableViewController , UISearchBarDelegate{
         jobs.append(contentsOf:fastFood)
         jobs.append(contentsOf:retail)
         //jobs.append(contentsOf:other)
+        navigationItem.title = Auth.auth().currentUser?.email
 
    
         searchBar.delegate = self
