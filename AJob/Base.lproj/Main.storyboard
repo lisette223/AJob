@@ -1013,7 +1013,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EaQ-N3-LMX">
-                                <rect key="frame" x="0.0" y="308" width="421" height="432"/>
+                                <rect key="frame" x="0.0" y="434" width="421" height="306"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -1059,10 +1059,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NtM-TK-zil">
-                                        <rect key="frame" x="26" y="320" width="322" height="100.5"/>
+                                        <rect key="frame" x="26" y="320" width="322" height="87"/>
                                         <subviews>
                                             <button toolTip="nnn" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ3-bv-eeV">
-                                                <rect key="frame" x="0.0" y="0.0" width="156" height="100.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="87"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Tips and Tricks" cornerStyle="large">
                                                     <backgroundConfiguration key="background">
@@ -1076,7 +1076,7 @@
                                                 </connections>
                                             </button>
                                             <button toolTip="jojij" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jod-cb-Tbs">
-                                                <rect key="frame" x="166" y="0.0" width="156" height="100.5"/>
+                                                <rect key="frame" x="166" y="0.0" width="156" height="87"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Sample Interview Questions  (Videos)" cornerStyle="large">
                                                     <backgroundConfiguration key="background">
@@ -1091,8 +1091,35 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZj-xa-Nyi">
-                                        <rect key="frame" x="87" y="430.5" width="200" height="231.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YMz-4E-b8P">
+                                        <rect key="frame" x="26" y="417" width="322" height="245"/>
+                                        <subviews>
+                                            <button toolTip="nnn" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFE-M1-ODS">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="245"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Tips and Tricks" cornerStyle="large">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button toolTip="jojij" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3B-ba-WfJ">
+                                                <rect key="frame" x="166" y="0.0" width="156" height="245"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Sample Interview Questions  (Videos)" cornerStyle="large">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="youTube:" destination="mV3-Hl-CUr" eventType="touchUpInside" id="uMu-Hw-Usl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -1886,19 +1913,19 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose from the Options Below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccC-x6-U2s">
-                                                <rect key="frame" x="6.5" y="240" width="329.5" height="37.5"/>
+                                                <rect key="frame" x="6.5" y="240" width="329.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="BeB-g2-u87">
-                                                <rect key="frame" x="0.0" y="317.5" width="342" height="306.5"/>
+                                                <rect key="frame" x="0.0" y="320" width="342" height="304"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CYf-2A-cBD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="128"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="127"/>
                                                         <subviews>
                                                             <button toolTip="nnn" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FT-Th-rNx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="146" height="128"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="146" height="127"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="STEM Internships" cornerStyle="large">
                                                                     <backgroundConfiguration key="background">
@@ -1912,7 +1939,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WV-Ew-nEP">
-                                                                <rect key="frame" x="196" y="0.0" width="146" height="128"/>
+                                                                <rect key="frame" x="196" y="0.0" width="146" height="127"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Jobs" cornerStyle="large">
                                                                     <backgroundConfiguration key="background">
@@ -1928,7 +1955,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s5G-aH-jEd">
-                                                        <rect key="frame" x="0.0" y="178" width="342" height="128.5"/>
+                                                        <rect key="frame" x="0.0" y="177" width="342" height="127"/>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
